@@ -50,6 +50,13 @@ argparser.addArgument([ '-q', '--quiet' ], {
     help: "Be quiet, don't output anything"
 });
 
+argparser.addArgument([ '-i', '--ignorevalues' ], {
+    defaultValue: false,
+    dest: 'ignoreValues',
+    action: 'storeTrue',
+    help: "Ignore values within DOM elements"
+});
+
 argparser.addArgument([ 'FILE1' ], {
     help: 'Reference file'
 });
