@@ -1,5 +1,5 @@
 {
-   "name": "dom-compare",
+   "name": "domcompare",
    "description": "Library to compare two DOM trees",
    "version": "0.2.1",
    "author": "Oleg Elifantiev <oleg@elifantiev.ru>",
@@ -28,6 +28,6 @@
       "test-cov": "npm run-script instrument && COVER=1 ISTANBUL_REPORTERS=lcovonly mocha -R mocha-istanbul",
       "test": "mocha -R spec"
    },
-   "repository": "git@github.com:Olegas/dom-compare.git",
+   "repository": "git@github.com:rakeshmenon/dom-compare.git",
    "engines": { "node": "*" }
 }
