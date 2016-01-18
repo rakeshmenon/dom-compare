@@ -1,10 +1,5 @@
-dom-compare
+domcompare
 ===========
-
-[![Build Status](https://travis-ci.org/Olegas/dom-compare.png)](https://travis-ci.org/Olegas/dom-compare)
-[![Coverage Status](https://coveralls.io/repos/Olegas/dom-compare/badge.png?branch=master)](https://coveralls.io/r/Olegas/dom-compare)
-[![NPM version](https://badge.fury.io/js/dom-compare.png)](http://badge.fury.io/js/dom-compare)
-[![Dependency Status](https://gemnasium.com/Olegas/dom-compare.png)](https://gemnasium.com/Olegas/dom-compare)
 
 NodeJS module to compare two DOM-trees
 
@@ -48,8 +43,8 @@ and actual one:
 One can compare them, get the result (is them equals, or not), and get extended report (why them are different).
 
 ```javascript
-var compare = require('dom-compare').compare,
-    reporter = require('dom-compare').GroupingReporter,
+var compare = require('domcompare').compare,
+    reporter = require('domcompare').GroupingReporter,
     expected = ..., // expected DOM tree
     actual = ..., // actual one
     result, diff, groupedDiff;
@@ -113,7 +108,7 @@ doesn't change the way CDATA sections is compared, they are always compared with
 
 ### Cli utility
 
-When installed globally with `npm install -g dom-compare` cli utility is available. 
+When installed globally with `npm install -g domcompare` cli utility is available. 
 See usage information and command-line options with `domcompare --help`
 
 You can try it on bundled samples:
@@ -129,6 +124,8 @@ You can try it on bundled samples:
       Element 'node' is missed
   /document
       Expected CDATA value '  cdata node' instead of 'cdata node  '
+
+(Ignore DOM element values by using the -i or --ignorevalues option)
 ```
   
 
@@ -157,7 +154,7 @@ Consider the following XML-document...
 ```
 ...and code snippet...
 ```javascript
-var canonizingSerializer = new (require('dom-compare').XMLSerializer)();
+var canonizingSerializer = new (require('domcompare').XMLSerializer)();
 var doc = ...; // parse above document somehow 
 console.log(canonizingSerializer.serializeToString(doc));
 ```
