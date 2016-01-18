@@ -1,6 +1,6 @@
 {
    "name": "domcompare",
-   "description": "Library to compare two DOM trees - modified "dom-compare" package",
+   "description": "Library to compare two DOM trees - modified 'dom-compare' package",
    "version": "0.2.2",
    "author": "Oleg Elifantiev <oleg@elifantiev.ru>",
    "contributors": [],
